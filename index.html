@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- everything is affected by the side div -->
+    <div class="side">
+        
+        <div class="rightside"> 
+            <div id="text">
+                <h1> Jabir Emeka </h1>
+                <br>
+                <div id="intro">
+                    I am an up and coming coder/developer
+                </div>
+            </div>
+
+            <div id="battlefield"><img src="images/battlefield.png"></div>
+            
+        </div>
+
+        <!--this is for the about page-->
+        <div class="aboutInfo">
+            <div id="aboutText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra nam libero justo laoreet. In hendrerit gravida rutrum quisque. Euismod elementum nisi quis eleifend quam. A scelerisque purus semper eget duis at tellus at. Lacus laoreet non curabitur gravida. Quis lectus nulla at volutpat diam ut venenatis tellus in. Ut etiam sit amet nisl purus in mollis nunc. Etiam non quam lacus suspendisse. Fermentum dui faucibus in ornare quam. Cursus metus aliquam eleifend mi in. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Viverra vitae congue eu consequat ac. Nibh mauris cursus mattis molestie a iaculis at erat.
+
+                Egestas integer eget aliquet nibh praesent tristique magna sit amet. Aenean pharetra magna ac placerat. Nec tincidunt praesent semper feugiat nibh sed. Amet massa vitae tortor condimentum lacinia quis. Ultricies integer quis auctor elit sed vulputate. Eget aliquet nibh praesent tristique magna sit. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Convallis a cras semper auctor neque. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Neque viverra justo nec ultrices dui sapien eget mi proin. Mattis pellentesque id nibh tortor id aliquet. Et malesuada fames ac turpis. Et malesuada fames ac turpis egestas sed tempus urna et. Cursus risus at ultrices mi tempus imperdiet nulla. Dui vivamus arcu felis bibendum ut tristique et. Ac auctor augue mauris augue neque gravida in fermentum. Iaculis nunc sed augue lacus viverra vitae congue.
+            </div>
+
+            <div id="videos">
+                    <div id="gallery">
+                            <iframe width="32%" height="315"
+                            src="https://www.youtube.com/embed/dUZw1iW7Ssw">
+                            </iframe>
+                            <iframe width="33%" height="315"
+                            src="https://www.youtube.com/embed/Cwj3b0v2E9s">
+                            </iframe>
+                            <iframe width="32%" height="315"
+                            src="https://www.youtube.com/embed/iw3c-a9JZwo">
+                            </iframe>
+                            
+                    </div>
+            </div>
+        </div>
+
+        <div class="ed">
+            <div id="grades">
+                <strong>9th Grade:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus elementum.
+                <br><br>
+                <strong>10th Grade:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus elementum.
+                <br><br>
+                <strong>11th Grade:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus elementum.
+                <br><br>
+                <strong>12th Grade:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus elementum.
+            </div>
+        </div>
+        <!-- this is the tab on the left side of the screen -->
+        <div class="leftside">
+            <div id="home">
+                <button>home</button>
+            </div>
+            <div id="about">
+                <button>about</button>
+            </div>
+            <div id= "education">
+                <button>education</button> 
+            </div>
+            <div id="skills">
+                <button>skills</button> 
+            </div>
+            <div id="work">
+                <button>work</button>  
+            </div>
+            <div id="contacts">
+                <button>contacts</button> 
+            </div>
+        </div>
+        <!-- <div id="copyright">&#169</div> -->
+
+    </div>
+    <script>
+        leftsideRef = document.getElementsByClassName("leftside");
+        homeRef = document.getElementById("home");
+        aboutRef = document.getElementById("about");
+        edRef = document.getElementById("education");
+        skillsRef = document.getElementById("skills");
+        workRef = document.getElementById("work");
+        contacts = document.getElementById("contacts")
+        rightsideRef = document.getElementsByClassName("rightside")[0];
+        aboutInfo = document.getElementsByClassName("aboutInfo")[0];
+        battleRef = document.getElementById("battlefield");
+        ed = document.getElementsByClassName("ed")[0];
+
+        homeRef.onclick = function(){
+            rightsideRef.style.display = "flex";
+            // imgRef.style.display ="block";
+            battleRef.style.display = "flex"
+            aboutInfo.style.display = "none";
+            ed.style.display = "none";
+        }
+
+        aboutRef.onclick = function(){
+            rightsideRef.style.display = "none";
+            aboutInfo.style.display = "block";
+            ed.style.display = "none";
+        }
+        edRef.onclick = function(){
+            ed.style.display = "block";
+            rightsideRef.style.display = "none";
+            aboutInfo.style.display = "none";
+        }
+        
+       
+        // skillsRef.onclick = function(){
+        //     .style.display = "none";
+        // }
+    
+        // workRef.onclick = function(){
+        //     .style.display = "none";
+        // }
+        // contactsRef.onclick = function(){
+        //     .style.display = "none";
+        // }
+
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
